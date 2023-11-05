@@ -12,6 +12,87 @@
     
 </head>
 <body>
-    
+    <main class="content">
+        <h1 class="title">Formulario de contacto</h1>
+        <form class="Form">
+            <!-- NAME -->
+            <fieldset class="FormGrup">
+                <legend>
+                    <label class="labelName" for="name">
+                        <abbr class="required" title="Campo obrigatório">*</abbr>
+                        Nombre 
+                    </label>
+                </legend>
+                <input type="text" class="inputName" id="name" placeholder="Ej: Francisco" name="name" autocomplete="name" required>
+            </fieldset>
+
+            <!-- LAST NAME -->
+            <fieldset class="FormGrup">
+                <legend>
+                    <label class="labelLastName" for="lastName">
+                        <abbr class="required" title="Campo obrigatório">*</abbr>
+                        Apellido 
+                    </label>
+                </legend>
+                <input type="text" class="inputLastName" id="lastName" placeholder="Ej: Carusso" name="apellido" autocomplete="last name" required>
+            </fieldset>
+
+            <!-- DNI -->
+            <fieldset class="FormGrup">
+                <legend>
+                    <label class="labelDni" for="dni">
+                        <abbr class="required" title="Campo obrigatório">*</abbr>
+                        DNI 
+                    </label>
+                </legend>
+                <input type="number" class="inputDni" id="dni" placeholder="Ej: 11223344" name="dni" autocomplete="number" required>
+            </fieldset>
+
+            <!-- MAIL -->
+            <fieldset class="FormGrup">
+                <legend>
+                    <label class="labelEmail" for="email"> 
+                        <abbr class="required" title="Campo obrigatório">*</abbr> 
+                        Correo 
+                    </label>
+                </legend>
+                <input type="email" class="inputEmail" id="email" placeholder="Ej: correo@gmail.com" name="correo" autocomplete="mail" required>
+            </fieldset>
+
+            <!-- TELÉFONO -->
+            <fieldset class="FormGrup">
+                <legend>
+                    <label class="labelTel" for="Tel"> Teléfono </label>
+                </legend>
+                <input type="tel" class="inputTel" id="Tel" placeholder="Ej: 1111111111" name="telefono" autocomplete="tel">
+            </fieldset>
+
+            <!-- TIPO SEGURO -->
+            <fieldset class="FormGrup">
+                <legend>
+                    <label for="tipoSeguro">
+                        <abbr class="required" title="Campo obrigatório">*</abbr>
+                        Tipo de Seguro 
+                    </label>
+                </legend>
+                <select id="tipoSeguro" class="tipoSeguro" name="tipoSeguro" required>
+                    <option value="" selected disabled>Elegir Seguto</option>
+                    <option value="basico">Básico</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </fieldset>
+
+            <!-- VALOR DEL SEGURO SELECCIONADO -->
+            <article class="FormGrup">
+                <P>Tipo de valor seleccionado: $ 
+                    <span id="imprimerValorSeguro"></span>
+                </P> 
+            </article>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpear datos">
+        </form>
+    </main>
 </body>
 </html>
