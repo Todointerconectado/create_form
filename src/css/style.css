@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* VARIABLES GLOBALES */
+:root {
+  --familyText: "Roboto", sans-serif;
+  --colorBody: #fbecce;
+  --colorPrincipal: #FEFEFE;
+  --colorSecundario: #214D6C;
+  --colorHover: #2D5D7F;
+  --colorCorrecto: #b7ffe0;
+  --espacio: 1rem;
+}
+
+/* RESET STYLE */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+.body {
+  background: var(--colorBody);
+  font-size: 1.6rem;
+}
+
+html,
+.body{
+  height: 100%;
+}
+
+.body,
+.main,
+.form,
+.FormGrup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--espacio);
+}
+
+/* STYLE MAIN */
+.main {
+  padding: var(--espacio);
+  font-family: var(--familyText);
+}
+
+.title {
+  color: var(--colorSecundario);
+}
+
+/* FORM */
+.form {
+  border-radius: 1rem;
+  box-shadow:  5px 5px 10px #000000BB,
+              -5px -5px 10px #B8B8B8;
+  
+  padding: var(--espacio);
+  background-color: var(--colorPrincipal);
+
+  max-width: 700px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.FormGrup {
+  border: 2px solid var(--colorSecundario);
+  padding: var(--espacio);
+  text-align: left;
+  max-width: 40rem;
+  flex-grow: 1;
+  transition: border 300ms;
+}
+.FormGrup:hover {
+  border: 2px solid #41779E;
+}
+
+.FormGrup label {
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+}
+
+.FormGrup input,
+.tipoSeguro{
+  padding: var(--espacio);
+  cursor: pointer;
+  width: 100%;
+}
+
+.required {
+  color: red;
+}
+
+/* BOTONES */
+.valorSeguro,
+.buttons {
+  min-width: 100%;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio);
+}
+
+.buttons input{
+  border-radius: 5rem;
+  padding: var(--espacio);
+  font-size: 1.5rem;
+  font-weight: bold;
+  max-width: 40rem;
+  min-width: 20rem;
+  flex-grow: 1;
+  background: var(--colorSecundario);
+  color: var(--colorPrincipal);
+  cursor: pointer;
+  transition: background 500ms;
+}
+.buttons input:hover {
+  background: var(--colorHover);
+}
