@@ -12,6 +12,9 @@
     
     <!-- STYLE -->
     <link rel="stylesheet" href="./src/css/style.css">
+
+    <!-- JS -->
+    <script defer type="module" src="./src/js/app.mjs"></script>
 </head>
 <body class="body">
     <main class="main">
@@ -78,17 +81,15 @@
                     </label>
                 </legend>
                 <select id="tipoSeguro" class="tipoSeguro" name="tipoSeguro" required>
-                    <option value="" selected disabled>Elegir Seguto</option>
-                    <option value="basico">Básico</option>
-                    <option value="intermedio">Intermedio</option>
-                    <option value="premium">Premium</option>
+                    <option value="" selected disabled>Elegir Seguro</option>
                 </select>
+                
             </fieldset>
             
             <!-- VALOR DEL SEGURO SELECCIONADO -->
             <article class="FormGrup valorSeguro">
                 <P>Tipo de valor seleccionado: $
-                    <span id="imprimerValorSeguro"></span>
+                    <span id="imprimerValorSeguro">Elegir Seguro</span>
                 </P>
             </article>
             <div class="buttons">
