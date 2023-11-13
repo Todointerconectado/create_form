@@ -13,13 +13,17 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="./src/css/style.css">
 
+    <!-- SDN LIBRERÍA  SWEET ALERT 2 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css" rel="stylesheet">
+
     <!-- JS -->
     <script defer type="module" src="./src/js/app.mjs"></script>
 </head>
 <body class="body">
     <main class="main">
         <h1 class="title">Contactar un Asesor</h1>
-        <form class="form">
+        <form id="form" class="form">
             <!-- NAME -->
             <fieldset class="FormGrup">
                 <legend>
@@ -28,7 +32,7 @@
                         Nombre 
                     </label>
                 </legend>
-                <input type="text" class="inputName" id="name" placeholder="Ej: Francisco" name="name" autocomplete="name" required>
+                <input type="text" class="inputName" id="name" placeholder="Ej: Francisco" name="nombre" autocomplete="name" required>
             </fieldset>
 
             <!-- LAST NAME -->
