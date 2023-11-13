@@ -11,7 +11,7 @@
 [![GitHub language count](https://img.shields.io/github/languages/count/Todointerconectado/create_form?logo=github)](#)
 [![GitHub top language](https://img.shields.io/github/languages/top/Todointerconectado/create_form?logo=github)](#)
 
-![Layout preview for the Todointerconectado page](https://repository-images.githubusercontent.com/714776582/83dcaf5f-f7df-46c4-8cab-4da958f77a0e)
+[![Layout preview for the Todointerconectado page](https://repository-images.githubusercontent.com/714776582/83dcaf5f-f7df-46c4-8cab-4da958f77a0e)](#)
 
 ## Desarrollador:
 
